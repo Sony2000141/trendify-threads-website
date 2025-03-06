@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Trendify Threads</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="/trendify-threads-website/styles/main.css">
 </head>
 <body>
     <header>
@@ -18,10 +18,17 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <h2>Get in Touch</h2>
-        <p>Email: support@trendifythreads.com</p>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </main>
+
     <footer>
         <p>© 2025 Trendify Threads</p>
     </footer>
